@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h1>ATM Machine</h1>
+        <div class="screen">
+            <p id="message">Welcome! Please choose an option.</p>
+        </div>
+        <input class="input" type="number" id="amountInput" placeholder="Enter amount" />
+        <div class="buttons">
+            <button  onclick="checkBalance()">Check Balance</button>
+            <button  onclick="deposit()">Deposit</button>
+            <button  onclick="withdraw()">Withdraw</button>
+        </div>
+        <div id="receipt" class="receipt"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
